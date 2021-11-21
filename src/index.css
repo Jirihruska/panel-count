@@ -5,9 +5,78 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.panel {
+  width: 64px;
+  margin-left: 4px;
+  margin-right: 4px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom: 12px solid rgba(0, 0, 0, 0.288);
+  border-left: 16px solid rgba(0, 0, 0, 0.431);
+  font-size: 20px;
+  text-shadow: 2px 2px black;
+  color: white;
+  font-weight: 800;
+  filter: grayscale(20%);
+  user-select: none;
+}
+
+.panel:hover {
+  cursor: pointer;
+  filter: grayscale(0%);
+  filter: contrast(120%);
+}
+
+.playground {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: center;
+  text-align: center;
+}
+
+.score {
+  position: absolute;
+  left: 80%;
+  top: 60%;
+  font-size: 64px;
+  color: white;
+  text-shadow: 4px 4px 8px rgb(85, 160, 221);
+  cursor: default;
+  user-select: none;
+}
+
+.btn {
+  height: 80px;
+  padding-left: 24px;
+  padding-right: 24px;
+  line-height: 80px;
+  background-color: rgb(62, 84, 119);
+  position: absolute;
+  text-transform: uppercase;
+  left: 80%;
+  top: 70%;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn:hover {
+  background-color: rgb(81, 113, 165);
 }
